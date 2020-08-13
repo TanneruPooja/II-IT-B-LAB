@@ -1,4 +1,4 @@
-#Experiment 1
+
 
 ##AIM OF THE EXPERIMENT:
 To display names and rollnumbers of the student
