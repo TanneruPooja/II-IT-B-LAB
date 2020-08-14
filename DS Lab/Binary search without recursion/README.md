@@ -13,4 +13,4 @@ Key element to be search:16
 2.Both are not matching and 16 is greater than 15.so we search only in the right subarray(i.e 16,21,31,67,98)
 3.search element is compared with the middle element.they are not matching.and 16 is smaller than 31.so we search only in the left subarray.
 4.search is compared with the middle element .hence both are matching.
-5.so the result is element is found at index '5'.
+5.so the result is element is found at index '6'.
