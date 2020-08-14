@@ -3,5 +3,6 @@
 ##DESCRIPTION OF LINEAR SEARCH:A linear search is a method for finding an element within a list .It sequentially checks each elementof the list until a matchj is found or the whole list has been searched.It works backward from the array to the start.
 
 ###STEP BY STEP PROCEDURE:
-Key element to be search:
+Key element to be search:15
+1.
 
