@@ -10,7 +10,28 @@ Key element to be search:16
 1.first,search element(16) is compared with middle element.
   middle = (low+ high)/2
   middle =15
-2.Both are not matching and 16 is greater than 15.so we search only in the right subarray(i.e 16,21,31,67,98)
-3.search element is compared with the middle element.they are not matching.and 16 is smaller than 31.so we search only in the left subarray.
-4.search is compared with the middle element .hence both are matching.
-5.so the result is element is found at index '6'.
+2.now, 16> middle(15)so we take the right half array (i.e,16,21,31,67,98)
+3.again,search element (16) is compared with the middle element(31)
+4.now,16< middle(31) so we take the left half array(i.e,16,21)
+5.now the search element and middle element are same.
+6.so the result is element found at index '6'.
+
+key element to be search:7
+1.first,search element (7)is compared with middle element.
+ middle = low+high/2
+ middle = 15
+2.now,7 < 15 so, we take the left half array(i.e,4,7,9,11)
+3.again search element is compared with the middle element(7)
+4.Both are matched.
+5.Hence,element is found at the position '2'.
+
+key element to be search:67
+1.first search element (67) is compared with the middle element(15)
+2.67 is greater than the middle element(15).so we take the right half array.
+3.again,search element is comapared with the middle element(31)
+4.search element and middle element are not matched.
+5.67 > 31 so we take right sub array(i.e,67,98).
+6.now 67 is compared with the middle element(67)
+7.both are matched.
+8.Hence the element found at the position '9'.
+
