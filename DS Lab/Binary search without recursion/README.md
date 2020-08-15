@@ -44,7 +44,7 @@ int ReBinarySearch(int a[],int first,int last,int x)
 3.again,search element (16) is compared with the middle element(31)
 4.now,16< middle(31) so we take the left half array(i.e,16,21)
 5.now the search element and middle element are same.
-6.so the result is element found at index '6'.
+6.so the result is element found at index '5'.
 
 key element to be search:7
 1.first,search element (7)is compared with middle element.
@@ -53,7 +53,7 @@ key element to be search:7
 2.now,7 < 15 so, we take the left half array(i.e,4,7,9,11)
 3.again search element is compared with the middle element(7)
 4.Both are matched.
-5.Hence,element is found at the position '2'.
+5.Hence,element is found at the position '1'.
 
 key element to be search:67
 1.first search element (67) is compared with the middle element(15)
@@ -63,5 +63,5 @@ key element to be search:67
 5.67 > 31 so we take right sub array(i.e,67,98).
 6.now 67 is compared with the middle element(67)
 7.both are matched.
-8.Hence the element found at the position '9'.
+8.Hence the element found at the position '8'.
 
