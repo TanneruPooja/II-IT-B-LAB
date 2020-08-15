@@ -6,10 +6,8 @@ if x > mid element,then x can only lie in the right half subarray after the mid 
 if x < mid element,recure for left half.
 
 ###STEP BY STEP PROCEDURE:
-Key element to be search:16
-1.first,search element(16) is compared with middle element.
-  middle = (low+ high)/2
-  middle =15#include<stdio.h>
+
+#include<stdio.h>
 int ReBinarySearch(int[],int,int,int);
 int main()
 {
@@ -39,29 +37,61 @@ int ReBinarySearch(int a[],int first,int last,int x)
 		     return ReBinarySearch(a,first,mid -1,x);
 	}
 	return -1;
-}
-2.now, 16> middle(15)so we take the right half array (i.e,16,21,31,67,98)
-3.again,search element (16) is compared with the middle element(31)
-4.now,16< middle(31) so we take the left half array(i.e,16,21)
-5.now the search element and middle element are same.
-6.so the result is element found at index '5'.
+}1.Given elements a[0]=4,a[1]=7,a[2]=9,a[3]=11,a[4]=15,a[5]=16,a[6]=21,a[7]=31,a[8]= 67,a[9]=98 
+2.Case -1:  Key element =73
+3.Iteration 1:
+                 Low=0,high=9,mid=4
+                 a[4]=15
+                 Key < a[4]
+     Iteration 2:
+               Low= 0,high=4,mid=2
+               a[2]=9
+             key < a[2] 
+      Iteration 3:
+             Low =0,high=2,mid=1
+            a[1]=7
+           key == a[1]
+4.key element found at position 1.
+ Output: Element found at index : 1
+ 
+Case 2  - Key element: 16
+1.Iteration 1:
+      Low =0,high=9,mid=4
+   a[4]=15
+  key > a[4]
+Iteration 2:
+     Low=4,high=9,mid=6
+      a[6]=21
+   key > a[6]
 
-key element to be search:7
-1.first,search element (7)is compared with middle element.
- middle = low+high/2
- middle = 15
-2.now,7 < 15 so, we take the left half array(i.e,4,7,9,11)
-3.again search element is compared with the middle element(7)
-4.Both are matched.
-5.Hence,element is found at the position '1'.
+Iteration3:
+      Low=4,high=6,mid=5
+      a[5]=16
+     key == a[5]
+2.Element found at position ‘5’.
+Output: Element found at index : 5
 
-key element to be search:67
-1.first search element (67) is compared with the middle element(15)
-2.67 is greater than the middle element(15).so we take the right half array.
-3.again,search element is comapared with the middle element(31)
-4.search element and middle element are not matched.
-5.67 > 31 so we take right sub array(i.e,67,98).
-6.now 67 is compared with the middle element(67)
-7.both are matched.
-8.Hence the element found at the position '8'.
+Case 3: key element: 67
+1.Iteration 1:
+      Low=0, high=9,mid=4
+       a[4]=15
+      key > a[4]
+2.Iteration 2:
+     Low=4,high=9,mid=6
+    a[6]=21
+   key > a[6]
+3.Iteration 3:
+     Low=6,high=9,mid=7
+    a[7]=31
+    key > a[7]
+4.Iteration 4:
+    Low=7,high=9,mid=8
+     a[8]=67
+    key == a[8]
+5.Element found at position ‘8’.
+Output: Element found at index : 8
+
+         
+ 
+
 
