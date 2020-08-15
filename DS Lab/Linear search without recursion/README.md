@@ -33,15 +33,58 @@ int ReBinarySearch(int a[],int first,int last,int x)
 		else
 		     return ReBinarySearch(a,first,mid -1,x);
 	}
-	return -1;
-}
+	return -1
+	}
+	1.Elemenets:  a[0]=11, a[1]=7,a[2]=9,a[3]=16,a[4]=21,a[5]=4,a[6]=15,a[7]=98,a[8]=67,a[9]=31.
+2.Case-1: key element:15
+3.Iteration-1: a[0]=11
+           Key !=a[0]
+  Iteration-2: a[1]=7
+          Key != a[1]
+ Iteration-3: a[2] = 9
+        Key != a[2]
+ Iteration-4: a[3]=16
+       Key != a[3]
+Iteration-4: a[4] =21
+     Key != a[4]
+Iteration-5: a[5]= 4
+    Key != a[5]
+Iteration-6: a[6]=15
+    Key == a[6]    [case passed]
+4.we got the output : 15 at position 7
+Enter the total elements in the array  10
+   Enter the array elements
+   11 7 9 16 21 4 15 98 67 31
+ Enter the element to search  15
+   Element found at pos 7
 
-Key element to be searched:15
-1.Firstly,select the first element (11) as the current element.
-2.compare 11 with the target element (15).
-3.There is a next element,then set current element to next element and again compare the current element to the target element.
-4.Then at position 6 the element is location is found.
-5.Hence,the key element is found and exit the process.
+CASE -2: key element: 99
+1.Iteration-1: a[0] = 11
+             Key != a[0]
+   Iteration-2 : a[1] =7
+           Key != a[1]
+  Iteration-3 : a[2] =9
+         Key != a[2]
+ Iteration-4 : a[3] = 16
+        Key != a[3]
+Iteration-5:a[4]=21
+       Key != a[4]
+Iteration-6:a[5]=4
+      Key != a[5]
+Iteration-7: a[6]=15
+     Key != a[6]
+Iteration-8 :a[7]=98
+    Key != a[7]
+Iteration-9: a[8]= 67
+   Key != a[8]
+Iteration-10: a[9]=31
+   Key != a[9]
+2.elements are completed in an array.key element is not found.
+Enter the total elements in the array  10
+   Enter the array elements
+   11 7 9 16 21 4 15 98 67 31
+   Enter the element to search  99
+   Element not found
 
-key element to be searched:99
+
 
